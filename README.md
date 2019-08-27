@@ -1,5 +1,10 @@
 # Configure VMware vSphere using Ansible
-> VMworld 2019 Hackathon - Team 2
+> VMworld 2019 Hackathon - Team 2 
+
+Team photo:
+
+https://twitter.com/arielsanchezmor/status/1166225847818182657?s=20
+
 
 ## Details
 Contains example of how to manipulate vSphere objects using Ansible.
