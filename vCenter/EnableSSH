@@ -1,0 +1,24 @@
+---
+- hosts: localhost
+
+  tasks:
+
+  - name: vcenter login
+    uri:
+      url: "https://192.168.1.202/rest/appliance"
+      force_basic_auth: yes
+      method: POST
+      user: administrator@vsphere.local
+      password: VMware1!
+      status_code: 200
+      validate_certs: no
+    register: login
+
+
+  - name: EnableBadSSH
+    uri:
+      url: "https://192.168.1.202/rest/appliance/access/ssh"
+      force_basic_auth: yes
+      validate_certs: no
+      reguest_body: {"enabled":true}
+    
